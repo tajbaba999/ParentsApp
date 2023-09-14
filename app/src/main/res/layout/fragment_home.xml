@@ -49,7 +49,6 @@
                 app:cpb_round_border="false" />
 
             <TextView
-                android:iimplementation 'com.intuit.sdp:sdp-android:1.1.0'd="@+id/progress_text"
                 android:layout_width="wrap_content"
                 android:layout_height="66dp"
                 android:layout_alignParentStart="true"
@@ -67,6 +66,28 @@
                 android:textSize="23sp" />
         </RelativeLayout>
     </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:background="@drawable/rounded_background"
+        android:layout_marginTop="@dimen/_11sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_12sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp">
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10sdp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
 
 
 </LinearLayout>
