@@ -9,7 +9,9 @@ import android.view.ViewGroup
 import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearSnapHelper
 import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.SnapHelper
 import com.mikhaellopez.circularprogressbar.CircularProgressBar
 
 class HomeFragment : Fragment() {
@@ -51,6 +53,8 @@ class HomeFragment : Fragment() {
         recyclerView = view.findViewById(R.id.recyclerview)
         recyclerView.setHasFixedSize(true)
         recyclerView.layoutManager = LinearLayoutManager(requireContext(), RecyclerView.HORIZONTAL, false)
+        val snapHelper : SnapHelper =LinearSnapHelper()
+        snapHelper.attachToRecyclerView(recyclerView)
 
         StdmarksLsit = ArrayList()
 
